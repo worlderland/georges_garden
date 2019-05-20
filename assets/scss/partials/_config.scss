@@ -43,8 +43,8 @@ $color-five: rgba(191,4,4,1); //#BF0404
 
 //Set variables for gradients
 $gradient-one-two: linear-gradient(to right, $color-one, $color-two);
-$gradient-three-four: linear-gradient(to right, $color-three, $color-four);
-$gradient-five-six: linear-gradient(to right, $color-five, $color-six);
+$gradient-three-four: linear-gradient(to right, $color-one, $color-four);
+$gradient-five-six: linear-gradient(to right, $color-two, $color-five);
 
 //Set mixins for gradients
 @mixin gradient-one-two {
@@ -190,7 +190,7 @@ $transform-scale: 0;
 
     100% {
       transform: scaleY(1);
-      background: $color-eight;
+      background: $color-black;
     }
 
     20% {

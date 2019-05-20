@@ -20,7 +20,7 @@ $color-black: rgba(0, 0, 0, 0.9);
         color: $color-white;
 
         &:hover {
-            color: $color-six;
+            color: $color-five;
         }
     }
 
@@ -28,14 +28,14 @@ $color-black: rgba(0, 0, 0, 0.9);
 
         li {
             button {
-                color: $color-six;
+                color: $color-five;
             }
         }
     }
 }
 
 .title-bar {
-    background: $color-nav;
+    background: $color-one;
 
 }
 
