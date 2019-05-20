@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>George's Garden | Home</title>
+  <link rel="stylesheet" href="assets/css/foundation.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/fonts/fa/css/all.css">
+</head>
+
+<body>
+  <!-- In the off-canvas DIV goes everything needed in the side appearing menu -->
+  <aside class="off-canvas position-right" id="offCanvas" data-off-canvas>
+    <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
+    <ul class="menu vertical text-center">
+      <li><a href="./">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </aside>
+  <!-- In the off-canvas-content DIV goes the whole page content -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <!-- Your page content lives here -->
+    <div class="grid-container-fluid">
+      <div class="grid-x">
+        <!-- BEGINNING OF THE TOP BAR -->
+        <div class="cell">
+          <div class="top-bar-container" data-sticky-container>
+            <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+              <!-- Mobile top bar -->
+              <div class="title-bar" data-responsive-toggle="desktop-menu">
+                <div class="title-bar-left">
+                  <h1><a href="./">Site Title</a></h1>
+                </div>
+                <div class="title-bar-right">
+                  <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+                  <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
+                </div>
+              </div>
+              <!-- Desktop top bar -->
+              <div class="title-bar" id="desktop-menu">
+                <div class="title-bar-left">
+                  <h1><a href="./">Site Title</a></h1>
+                </div>
+                <div class="title-bar-right">
+                  <ul class="menu float-right align-middle">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><button class="menu-icon" type="button" data-toggle="offCanvas"></button></li>
+                    <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF THE TOP BAR -->
+  </div>
+  </div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-y">
+      <div class="cell">
+        <hr>
+        <h2 class="text-uppercase text-center">Lorem Ipsum</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="cell contact">
+        <form method="post" action="">
+          <div class="grid-x">
+            <div class="cell large-12">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Full Name">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Message" rows="10"></textarea>
+              <input id="submit" name="submit" type="submit" value="Submit" class="button">
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- BEGINNING OF GOOGLE MAPS EMBEDDING -->
+      <div class="cell">
+        <div class="responsive-embed google-maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.474946787999!2d115.85886871569969!3d-31.94800952936437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bacdf53147a1%3A0x6a13f7dd60dab2c8!2sNorth+Metropolitan+TAFE!5e0!3m2!1sen!2sau!4v1554635465972!5m2!1sen!2sau"
+            frameborder="0" style="border:0"></iframe>
+        </div>
+      </div>
+      <!-- END OF GOOGLE MAPS EMBEDDING -->
+    </div>
+  </div>
+  <!-- BEGINNING OF FOOTER -->
+  <footer class="grid-container-fluid">
+    <div class="grid-x grid-margin-y">
+      <div class="cell">
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x grid-margin-y text-center">
+            <div class="cell small-6 medium-4">
+              <h5>Lorem Ipsum</h5>
+              <ul class="vertical menu">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+                <li><a href="#">Four</a></li>
+              </ul>
+            </div>
+            <div class="cell small-6 medium-4">
+              <h5>Lorem Ipsum</h5>
+              <ul class="vertical menu">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+                <li><a href="#">Four</a></li>
+              </ul>
+            </div>
+            <div class="cell medium-4">
+              <h5>Lorem Ipsum</h5>
+              <img src="https://placehold.it/150" alt="Space" class="thumbnail">
+            </div>
+            <div class="cell"></div>
+            <div class="cell">
+              <ul class="menu align-center">
+                <li><a href="./">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="cell text-center">
+              <p><small>Lorem Ipsum</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END OF FOOTER -->
+  </div>
+
+  <script src="assets/js/vendor/jquery.js"></script>
+  <script src="assets/js/vendor/what-input.js"></script>
+  <script src="assets/js/vendor/foundation.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
