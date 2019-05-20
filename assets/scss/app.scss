@@ -1,15 +1,6 @@
-.test {
-    border: 1px solid red;
-}
-
-.google-maps {
-    padding-bottom: 30vh;
-
-    iframe {
-        height: 30vh;
-    }
-}
-
-footer {
-    background-color: #777;
-}
+@import "normalise";
+@import "config";
+@import "nav";
+@import "mobile";
+@import "tablet";
+@import "desktop";
