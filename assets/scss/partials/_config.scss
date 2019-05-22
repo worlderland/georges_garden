@@ -1,25 +1,25 @@
 //Set variables for the main site colours
 $color-white: rgba(255, 255, 255, 1); //#FFFFFF
 $color-black: rgba(0, 0, 0, 1); //#000000
-$color-one: rgba(101,166,3,1); //#65A603
-$color-two: rgba(242,183,5,1); //#F2B705
-$color-three: rgba(217,105,7,1); //#D96907
-$color-four: rgba(166,115,96,1); //#A67360
-$color-five: rgba(191,4,4,1); //#BF0404
+$color-one: rgba(6,115,2,1); //#067302
+$color-two: rgba(5,89,2,1); //#055902
+$color-three: rgba(2,38,1,1); //#022601
+$color-four: rgba(132,217,4,1); //#84D904
+$color-five: rgba(215,242,5,1); //#D7F205
 
 //Set the fonts
 @font-face {
-  font-family: 'Fjalla One', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Fjalla+One);
+  font-family: 'Kite-One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Kite+One&display=swap);
 }
 
 @font-face {
-  font-family: 'Quicksand-Regular', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Quicksand);
+  font-family: 'Imprima', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Imprima&display=swap);
 }
 
 @mixin title-font {
-  font-family: 'Fjalla One', sans-serif !important;
+  font-family: 'Kite-One', sans-serif !important;
 }
 
 //Set media query mixins
