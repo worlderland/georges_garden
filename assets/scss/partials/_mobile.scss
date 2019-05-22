@@ -26,6 +26,7 @@ h1 {
 h2 {
     font-size: 1.4em;
     padding: 1em 0;
+    color: $color-three;
 }
 
 h3 {
@@ -147,10 +148,10 @@ $box-shadow: 5px 5px 5px $color-nine;
     }
 }
 
-$color-nine: rgba(83, 81, 86, 1); //Re-declaring the original color-nine after using it
+$color-three: rgba(2, 38, 1, 0.9); //Re-declaring the original color-nine after using it
 
 .card-section {
-    background-color: $color-nine;
+    background-color: $color-three;
     color: $color-white;
 }
 

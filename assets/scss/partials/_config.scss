@@ -7,6 +7,10 @@ $color-three: rgba(2, 38, 1, 1); //#022601
 $color-four: rgba(132, 217, 4, 1); //#84D904
 $color-five: rgba(215, 242, 5, 1); //#D7F205
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 //Set the fonts
 @font-face {
   font-family: 'Kite-One', sans-serif;

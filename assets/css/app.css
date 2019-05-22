@@ -1,3 +1,6 @@
+.text-uppercase {
+  text-transform: uppercase; }
+
 @font-face {
   font-family: 'Kite-One', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Kite+One&display=swap); }
@@ -8,6 +11,9 @@
 
 .test {
   border: 1px solid red; }
+
+.text-uppercase {
+  text-transform: uppercase; }
 
 @font-face {
   font-family: 'Kite-One', sans-serif;
@@ -21,7 +27,7 @@
   border: 1px solid red; }
 
 .off-canvas {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(2, 38, 1, 0.9);
   width: 100%; }
 
 .off-canvas.is-transition-overlap {
@@ -88,6 +94,9 @@
 .multilevel-accordion-menu .menu > li:not(.menu-text) > a {
   padding: 1.2rem 1rem; }
 
+.text-uppercase {
+  text-transform: uppercase; }
+
 @font-face {
   font-family: 'Kite-One', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Kite+One&display=swap); }
@@ -120,7 +129,8 @@ h1 {
 
 h2 {
   font-size: 1.4em;
-  padding: 1em 0; }
+  padding: 1em 0;
+  color: #022601; }
 
 h3 {
   font-size: 1.6em;
@@ -202,7 +212,7 @@ textarea {
     box-shadow: 5px 5px 5px rgba(83, 81, 86, 0.4); }
 
 .card-section {
-  background-color: #535156;
+  background-color: rgba(2, 38, 1, 0.9);
   color: white; }
 
 .bio {
@@ -230,7 +240,7 @@ a.boom-button {
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #d7f205, #d7f205);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  box-shadow: 2px 1000px 1px #535156 inset;
+  box-shadow: 2px 1000px 1px rgba(83, 81, 86, 0.4) inset;
   z-index: 1;
   position: relative;
   overflow: hidden; }
@@ -286,6 +296,9 @@ footer {
     footer a:hover {
       color: white; }
 
+.text-uppercase {
+  text-transform: uppercase; }
+
 @font-face {
   font-family: 'Kite-One', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Kite+One&display=swap); }
@@ -302,6 +315,9 @@ footer {
     height: 70%;
     width: 70%; } }
 
+.text-uppercase {
+  text-transform: uppercase; }
+
 @font-face {
   font-family: 'Kite-One', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Kite+One&display=swap); }
@@ -315,7 +331,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   .off-canvas {
-    width: 20%; }
+    width: 15%; }
   #logo {
     width: 200px; }
   .img-left,

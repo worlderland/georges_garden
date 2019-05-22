@@ -1,13 +1,13 @@
 @import "config";
 
 //BEGINNING NAVIGATION MENU STYLES====================================================================================================
-$color-black: rgba(0, 0, 0, 0.8);
+$color-three: rgba(2, 38, 1, 0.9);
 .off-canvas {
-    background-color: $color-black;
+    background-color: $color-three;
     width: 100%;
     
 }
-$color-black: rgba(0, 0, 0, 1);
+$color-three: rgba(2, 38, 1, 1);
 
 .off-canvas.is-transition-overlap {
     z-index: 200;
