@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>George's Garden | Home</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.min.css">
+  <link rel="stylesheet" href="assets/css/foundation.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -90,12 +90,12 @@
               <div class="title-bar" id="desktop-menu">
                 <div class="title-bar-left">
                   <div class="grid-container-fluid">
-                    <div class="grid-x grid-padding-x grid-margin-y align-middle">
-                      <div class="cell shrink">
+                    <div class="grid-x grid-padding-x grid-margin-y align-middle align-justify">
+                      <div class="cell small-2 text-center">
                         <a href="./"><img id="logo" src="assets/img/boom_logo_orange.svg"
                             alt="George's Garden Logo"></a>
                       </div>
-                      <div class="cell auto">
+                      <div class="cell shrink text-center">
                         <ul class="menu text-center">
                           <li><a href="./">Home</a></li>
                           <li><a href="product.html">Our Products</a></li>
@@ -103,8 +103,9 @@
                           <li><a href="contact.html">Contact</a></li>
                         </ul>
                       </div>
-                      <div class="cell shrink">
-                        <button type="button" data-toggle="offCanvas"><i class="fas fa-bars  fa-2x"></i></button>
+                      <div class="cell small-2">
+                        <button class="float-right" type="button" data-toggle="offCanvas"><i
+                            class="fas fa-bars  fa-2x"></i></button>
                       </div>
                     </div>
                   </div>
@@ -156,17 +157,24 @@
               </ul>
             </div>
           </div>
-          <nav class="orbit-bullets">
-            <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span
-                class="show-for-sr">Current Slide</span></button>
-            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-            <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-            <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-          </nav>
         </div>
       </div>
     </header>
     <!-- END OF THE CAROUSEL ????????????????????????????????????????????????????????????????????????????????????????-->
+
+    <div class="grid-container">
+      <div class="grid-x grid-margin-y">
+        <!-- Empty cell for spacing -->
+        <div class="cell"></div>
+        <div class="cell">
+          <hr>
+          <h2 class="text-uppercase text-center">Lorem Ipsum</h2>
+          <hr>
+        </div>
+        <!-- Empty cell for spacing -->
+        <div class="cell"></div>
+      </div>
+    </div>
 
     <!-- BEGINNING OF BEST PRODUCTS SECTION (Cards) /////////////////////////////////////////////////////////////////-->
     <div class="grid-container">
@@ -220,24 +228,33 @@
           </div>
         </div>
         <div class="cell">
-            <div class="card">
-              <img src="#" alt="Lorem Ipsum">
-              <div class="card-section">
-                <div class="bio">
-                  <h5 class="section-title">Drop In!</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque animi pariatur accusantium alias
-                    beatae
-                    deleniti quidem, nihil quod et earum? Sint consequatur cum voluptate veniam deserunt expedita esse
-                    beatae odit.
-                  </p>
-                </div>
-                <a class="boom-button float-right" href="products.html">Read More</a>
+          <div class="card">
+            <img src="#" alt="Lorem Ipsum">
+            <div class="card-section">
+              <div class="bio">
+                <h5 class="section-title">Drop In!</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque animi pariatur accusantium alias
+                  beatae
+                  deleniti quidem, nihil quod et earum? Sint consequatur cum voluptate veniam deserunt expedita esse
+                  beatae odit.
+                </p>
               </div>
+              <a class="boom-button float-right" href="products.html">Read More</a>
             </div>
           </div>
+        </div>
       </div>
     </div>
     <!-- END OF BEST PRODUCT SECTION ///////////////////////////////////////////////////////////////////////////////-->
+
+    <div class="grid-container">
+      <div class="grid-x grid-margin-y">
+        <!-- Empty cell for spacing -->
+        <div class="cell"></div>
+        <!-- Empty cell for spacing -->
+        <div class="cell"></div>
+      </div>
+    </div>
 
     <!-- BEGINNING OF SEPARATOR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <div class="grid-container-fluid">
@@ -379,9 +396,9 @@
   </div>
   <!-- END of canvas -->
 
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/foundation.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+  <script src="assets/js/vendor/jquery.js"></script>
+  <script src="assets/js/vendor/what-input.js"></script>
+  <script src="assets/js/vendor/foundation.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 

@@ -1,11 +1,11 @@
 //Set variables for the main site colours
 $color-white: rgba(255, 255, 255, 1); //#FFFFFF
 $color-black: rgba(0, 0, 0, 1); //#000000
-$color-one: rgba(6,115,2,1); //#067302
-$color-two: rgba(5,89,2,1); //#055902
-$color-three: rgba(2,38,1,1); //#022601
-$color-four: rgba(132,217,4,1); //#84D904
-$color-five: rgba(215,242,5,1); //#D7F205
+$color-one: rgba(6, 115, 2, 1); //#067302
+$color-two: rgba(5, 89, 2, 1); //#055902
+$color-three: rgba(2, 38, 1, 1); //#022601
+$color-four: rgba(132, 217, 4, 1); //#84D904
+$color-five: rgba(215, 242, 5, 1); //#D7F205
 
 //Set the fonts
 @font-face {
@@ -107,117 +107,6 @@ $transform-scale: 0;
   -ms-transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
   -o-transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
   transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
-}
-
-//Sound wave
-@mixin sound-wave {
-  width: 100%;
-  height: 15px;
-  /*position: absolute;*/
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-
-  .sound-container {
-    //Position relative was commented and top -8px did not exist.
-    position: relative;
-    top: 20px;
-    left: 10px;
-    width: 150px;
-    height: 80%;
-    display: inline-block;
-    margin-left: 4px;
-  }
-
-  .sound-container>div {
-    /*position: relative;*/
-    height: 100%;
-    width: 0.05rem;
-    background: $color-black;
-    display: inline-block;
-    animation: wave 3s infinite ease-in-out;
-    -webkit-animation: wave 3s infinite ease-in-out;
-    -moz-animation: wave 3s infinite ease-in-out;
-    -ms-animation: wave 3s infinite ease-in-out;
-    -o-animation: wave 3s infinite ease-in-out;
-
-  }
-
-  .sound-container .rect-2 {
-    animation-delay: 0.1s;
-    -webkit-animation-delay: 0.1s;
-    -moz-animation-delay: 0.1s;
-    -ms-animation-delay: 0.1s;
-    -o-animation-delay: 0.1s;
-  }
-
-  .sound-container .rect-3 {
-    animation-delay: 0.2s;
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -ms-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-  }
-
-  .sound-container .rect-4 {
-    animation-delay: 0.3s;
-    -webkit-animation-delay: 0.3s;
-    -moz-animation-delay: 0.3s;
-    -ms-animation-delay: 0.3s;
-    -o-animation-delay: 0.3s;
-  }
-
-  .sound-container .rect-5 {
-    animation-delay: 0.4s;
-    -webkit-animation-delay: 0.4s;
-    -moz-animation-delay: 0.4s;
-    -ms-animation-delay: 0.4s;
-    -o-animation-delay: 0.4s;
-  }
-
-  .sound-container .rect-6 {
-    animation-delay: 0.5s;
-    -webkit-animation-delay: 0.5s;
-    -moz-animation-delay: 0.6s;
-    -ms-animation-delay: 0.6s;
-    -o-animation-delay: 0.6s;
-  }
-
-  @keyframes wave {
-    0% {}
-
-    100% {
-      transform: scaleY(1);
-      background: $color-black;
-    }
-
-    20% {
-      transform: scaleY(3);
-      background: $color-four;
-    }
-
-    33% {
-      transform: scaleY(1);
-      background: $color-three;
-    }
-
-    50% {
-      transform: scaleY(3);
-      background: $color-five;
-    }
-
-    66% {
-      transform: scaleY(1);
-      background: $color-two;
-    }
-
-    84% {
-      transform: scaleY(3);
-      background: $color-one;
-    }
-  }
 }
 
 //Set text colour - if required

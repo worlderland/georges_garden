@@ -101,7 +101,7 @@
 
 body {
   background: white;
-  font-family: 'Quicksand-Regular', sans-serif; }
+  font-family: 'Imprima', sans-serif; }
 
 h1,
 h2,
@@ -120,8 +120,7 @@ h1 {
 
 h2 {
   font-size: 1.4em;
-  padding-bottom: 1em;
-  padding-top: 0.5em; }
+  padding: 1em 0; }
 
 h3 {
   font-size: 1.6em;
@@ -204,8 +203,7 @@ textarea {
 
 .card-section {
   background-color: #535156;
-  color: white;
-  font-family: 'Quicksand-Regular', sans-serif; }
+  color: white; }
 
 .bio {
   width: 100%; }
