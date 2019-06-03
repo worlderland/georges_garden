@@ -97,7 +97,113 @@ textarea {
 
 //END GENERAL STYLES =================================================================================================================
 
+//BEGINNING NAVIGATION MENU STYLES====================================================================================================
+$color-three: rgba(2, 38, 1, 0.9);
+
+.off-canvas {
+    background-color: $color-three;
+    width: 100%;
+
+}
+$color-three: rgba(2, 38, 1, 1);
+
+.off-canvas.is-transition-overlap {
+    z-index: 200;
+}
+
+.top-bar-container,
+.off-canvas {
+    font-family: 'Kite-One', sans-serif;
+
+    a {
+        color: $color-white;
+
+        &:hover {
+            color: $color-four;
+        }
+    }
+
+    .menu {
+
+        li {
+            button {
+                color: $color-one;
+            }
+        }
+    }
+}
+
+.top-bar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.title-bar {
+    background: transparent;
+
+}
+
+$color-white: rgba(255, 255, 255, 0.9);
+
+.sticky-navbar {
+    background: $color-white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    a {
+        color: $color-black;
+    }
+}
+
+$color-white: rgba(255, 255, 255, 1);
+
+//Mobile logo styles
+// #mobile-logo {
+//     max-width: 300px;
+// }
+
+//END NAVIGATION MENU STYLES =================================================================================================================
+
 //BEGINNING BODY STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????????
+//Styling the carousel
+.orbit-slide-1,
+.orbit-slide-2,
+.orbit-slide-3,
+.orbit-slide-4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+$color-white: rgba(255, 255, 255, 0.1);
+$color-black: rgba(0, 0, 0, 0.8);
+.orbit-slide-1 {
+    background-image: linear-gradient(to bottom, $color-black, $color-white), url(../img/yellow-flower.JPG);
+
+}
+
+.orbit-slide-2 {
+    background-image: linear-gradient(to bottom, $color-black, $color-white), url(../img/waterfall.JPG);
+
+}
+
+.orbit-slide-3 {
+    background-image: linear-gradient(to bottom, $color-black, $color-white), url(../img/pink-flowers.jpg);
+
+}
+
+.orbit-slide-4 {
+    background-image: linear-gradient(to bottom, $color-black, $color-white), url(../img/yellow-flower-2.JPG);
+
+}
+$color-white: rgba(255, 255, 255, 1);
+$color-black: rgba(0, 0, 0, 1);
+
 //Styling of icons on the site
 .icons {
     height: 100%;

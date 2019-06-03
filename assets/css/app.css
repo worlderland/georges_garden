@@ -26,88 +26,6 @@
 .test {
   border: 1px solid red; }
 
-.off-canvas {
-  background-color: rgba(2, 38, 1, 0.9);
-  width: 100%; }
-
-.off-canvas.is-transition-overlap {
-  z-index: 200; }
-
-.top-bar-container,
-.off-canvas {
-  font-family: 'Kite-One', sans-serif; }
-  .top-bar-container a,
-  .off-canvas a {
-    color: white; }
-    .top-bar-container a:hover,
-    .off-canvas a:hover {
-      color: #067302; }
-  .top-bar-container .menu li button,
-  .off-canvas .menu li button {
-    color: #067302; }
-
-.title-bar {
-  background: #84d904;
-  -webkit-box-shadow: 0 2.5px 5px #022601;
-  -moz-box-shadow: 0 2.5px 5px #022601;
-  box-shadow: 0 2.5px 5px #022601; }
-
-.sticky-navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100; }
-
-#mobile-logo {
-  width: 150px; }
-
-.multilevel-accordion-menu .is-accordion-submenu-parent a {
-  background: #4d5158; }
-
-.multilevel-accordion-menu .is-accordion-submenu a {
-  background: #35383d; }
-
-.multilevel-accordion-menu .sublevel-1 {
-  text-indent: 1rem; }
-
-.multilevel-accordion-menu .sublevel-2 {
-  text-indent: 2rem; }
-
-.multilevel-accordion-menu .sublevel-3 {
-  text-indent: 3rem; }
-
-.multilevel-accordion-menu .sublevel-4 {
-  text-indent: 4rem; }
-
-.multilevel-accordion-menu .sublevel-5 {
-  text-indent: 5rem; }
-
-.multilevel-accordion-menu .sublevel-6 {
-  text-indent: 6rem; }
-
-.multilevel-accordion-menu .multilevel-accordion-menu a {
-  color: white;
-  box-shadow: inset 0 -1px #41444a; }
-  .multilevel-accordion-menu .multilevel-accordion-menu a::after {
-    border-color: white transparent transparent; }
-
-.multilevel-accordion-menu .menu > li:not(.menu-text) > a {
-  padding: 1.2rem 1rem; }
-
-.text-uppercase {
-  text-transform: uppercase; }
-
-@font-face {
-  font-family: 'Kite-One', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Kite+One&display=swap); }
-
-@font-face {
-  font-family: 'Imprima', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Imprima&display=swap); }
-
-.test {
-  border: 1px solid red; }
-
 body {
   background: white;
   font-family: 'Imprima', sans-serif; }
@@ -181,6 +99,65 @@ label {
 
 textarea {
   padding: 8px; }
+
+.off-canvas {
+  background-color: rgba(2, 38, 1, 0.9);
+  width: 100%; }
+
+.off-canvas.is-transition-overlap {
+  z-index: 200; }
+
+.top-bar-container,
+.off-canvas {
+  font-family: 'Kite-One', sans-serif; }
+  .top-bar-container a,
+  .off-canvas a {
+    color: white; }
+    .top-bar-container a:hover,
+    .off-canvas a:hover {
+      color: #84d904; }
+  .top-bar-container .menu li button,
+  .off-canvas .menu li button {
+    color: #067302; }
+
+.top-bar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99; }
+
+.title-bar {
+  background: transparent; }
+
+.sticky-navbar {
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
+  .sticky-navbar a {
+    color: black; }
+
+.orbit-slide-1,
+.orbit-slide-2,
+.orbit-slide-3,
+.orbit-slide-4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh; }
+
+.orbit-slide-1 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1)), url(../img/yellow-flower.JPG); }
+
+.orbit-slide-2 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1)), url(../img/waterfall.JPG); }
+
+.orbit-slide-3 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1)), url(../img/pink-flowers.jpg); }
+
+.orbit-slide-4 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1)), url(../img/yellow-flower-2.JPG); }
 
 .icons {
   height: 100%;
@@ -331,9 +308,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   .off-canvas {
-    width: 15%; }
-  #logo {
-    width: 200px; }
+    width: 20%; }
   .img-left,
   .img-right {
     position: relative;
