@@ -156,17 +156,11 @@ $color-white: rgba(255, 255, 255, 0.9);
     z-index: 100;
 
     a {
-        color: $color-black;
+        color: $color-three;
     }
 }
 
 $color-white: rgba(255, 255, 255, 1);
-
-//Mobile logo styles
-// #mobile-logo {
-//     max-width: 300px;
-// }
-
 //END NAVIGATION MENU STYLES =================================================================================================================
 
 //BEGINNING BODY STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????????
@@ -190,7 +184,7 @@ $color-black: rgba(0, 0, 0, 0.8);
 }
 
 .orbit-slide-2 {
-    background-image: linear-gradient(to bottom, $color-black, $color-white), url(../img/waterfall.JPG);
+    background-image: linear-gradient(to bottom, $color-black, $color-white), url(../img/yellow-blue-flowers.JPG);
 
 }
 
@@ -208,14 +202,6 @@ $color-white: rgba(255, 255, 255, 1);
 $color-black: rgba(0, 0, 0, 1);
 //End styling carousel
 
-//Styling of icons on the site
-.icons {
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    padding: 0.5rem;
-}
-
 //Setting variables for box shadows on about page boxes
 $color-black: rgba(10, 20, 23, 0.4); //Setting color-eight opacity for box shadow
 $box-shadow: 5px 5px 0 $color-black;
@@ -223,24 +209,27 @@ $box-shadow: 5px 5px 0 $color-black;
 .box-shadowed {
     @include box-shadow;
 }
+
 $color-black: rgba(10, 20, 23, 1); //Re-declaring the original color-eight after using it
 
 //Styling of the cards with product categories
 $color-white: rgba(255, 255, 255, 0.1);
 $color-black: rgba(0, 0, 0, 0.6);
+
 .card {
     position: relative;
 
     img {
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-    
+
         &:hover {
             -webkit-transform: scale(1.25);
             transform: scale(1.25);
             overflow: hidden;
         }
     }
+
     span {
         position: absolute;
         bottom: 0;
@@ -252,15 +241,31 @@ $color-black: rgba(0, 0, 0, 0.6);
         background: linear-gradient(to top, $color-black, $color-white);
     }
 }
+
 $color-white: rgba(255, 255, 255, 1);
 $color-black: rgba(0, 0, 0, 1);
 
 .card {
     span {
-        color: $color-white
+        color: $color-white;
     }
 }
+
 //End of styling cards with product categories
+
+//Styling of the separator on home page
+$color-one: rgba(6, 115, 2, 0.6);
+
+.separator {
+    background-color: $color-one;
+    color: $color-white;
+    p {
+        font-size: 2rem;
+    }
+    
+}
+
+$color-one: rgba(6, 115, 2, 1);
 
 .shared {
     margin-bottom: 0.7rem;
