@@ -6,6 +6,7 @@ window.onscroll = function() {myFunction()};
 
 // Get the header
 var header = document.getElementById("topBarContainer");
+var card = document.getElementsByClassName("card");
 
 // Get the offset position of the navbar
 var sticky = topBarContainer.offsetTop;
@@ -14,8 +15,12 @@ var sticky = topBarContainer.offsetTop;
 function myFunction() {
     if (window.pageYOffset > sticky) {
     topBarContainer.classList.add("sticky-navbar");
+    $(".card").addClass(" fadeInUp animated");
     } else {
     topBarContainer.classList.remove("sticky-navbar");
     }
+
+
 }
 //END OF JS FOR SCROLLING-STICKY TOP BAR
+

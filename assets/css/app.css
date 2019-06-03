@@ -183,6 +183,10 @@ textarea {
     font-size: 2rem;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.1)); }
 
+.card.fadeInUp {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s; }
+
 .card span {
   color: white; }
 

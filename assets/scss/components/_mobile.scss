@@ -242,6 +242,11 @@ $color-black: rgba(0, 0, 0, 0.6);
     }
 }
 
+.card.fadeInUp {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
 $color-white: rgba(255, 255, 255, 1);
 $color-black: rgba(0, 0, 0, 1);
 
@@ -259,10 +264,11 @@ $color-one: rgba(6, 115, 2, 0.6);
 .separator {
     background-color: $color-one;
     color: $color-white;
+
     p {
         font-size: 2rem;
     }
-    
+
 }
 
 $color-one: rgba(6, 115, 2, 1);
