@@ -26,6 +26,10 @@ $color-five: rgba(215, 242, 5, 1); //#D7F205
   font-family: 'Kite-One', sans-serif !important;
 }
 
+@mixin body-font {
+  font-family: 'Imprima', sans-serif !important;
+}
+
 //Set media query mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
