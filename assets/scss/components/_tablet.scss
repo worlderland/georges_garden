@@ -2,15 +2,34 @@
 
 @include mediaMd {
 
+    .off-canvas {
+        width: 20%;
+
+    }
+
+    .page-title-bar {
+        text-align: unset;
+
+        h1 {
+            text-align: left;
+        }
+
+        a,
+        p {
+            text-align: right;
+        }
+
+    }
+
     .orbit-slide-1,
     .orbit-slide-2,
     .orbit-slide-3,
     .orbit-slide-4 {
-        
+
         p {
-            
+
             font-size: 4rem;
-            
+
         }
 
     }

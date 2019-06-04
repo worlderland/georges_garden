@@ -1,20 +1,16 @@
 @import "config";
 
 @include mediaLg {
-    .off-canvas {
-        width: 20%;
-
-    }
 
     .orbit-slide-1,
     .orbit-slide-2,
     .orbit-slide-3,
     .orbit-slide-4 {
-        
+
         p {
-            
+
             font-size: 5rem;
-            
+
         }
 
     }

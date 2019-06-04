@@ -13,11 +13,13 @@ h4,
 h5,
 h6 {
     @include title-font;
+    padding: 1.5rem;
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     display: block;
+    padding-bottom: 0.5rem;
     color: $color-four;
     text-transform: uppercase;
 }
@@ -30,71 +32,53 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6em;
+    font-size: 1.8em;
     display: block;
-    padding: 14px 0.5em;
     color: $color-four;
 }
 
 h4 {
-    font-size: 1.2em;
+    font-size: 1.6em;
     padding: 0.5em;
     color: $color-black;
     text-align: center;
 }
 
 h5 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.2rem;
 }
 
 p {
     font-size: 1rem;
+    padding: 1rem 0;
+    line-height: 1.5rem;
 }
 
 input,
 textarea,
 button,
 label {
-    @include title-font;
+    @include body-font;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    color: $color-black;
 }
 
-// Removed by JR to pass validation
-button a {
+.button {
+    background: $color-two;
+    border-radius: 15px;
     color: $color-white;
 
-    &::after {
-        color: $color-four;
+    &:hover {
+        background: $color-four;
+        color: $color-two;
+        border: 1px solid $color-two;
     }
 }
-
-label {
-    color: $color-white;
-    padding-bottom: 5px;
-}
-
-//Site wide title controller
-.section-title {
-    color: $color-four;
-    padding: 0.5rem;
-}
-
-//Site wide contact form controller
-input,
-textarea,
-button,
-label {
-    @include title-font;
-}
-
-label {
-    color: $color-white;
-    padding-bottom: 5px;
-}
-
-textarea {
-    padding: 8px;
-}
-
 //END GENERAL STYLES =================================================================================================================
 
 //BEGINNING NAVIGATION MENU STYLES====================================================================================================
@@ -112,7 +96,20 @@ $color-three: rgba(2, 38, 1, 1);
     z-index: 200;
 }
 
-.top-bar-container,
+.top-bar-container {
+    @include nav-font;
+
+    a {
+        color: $color-three;
+
+        &:hover {
+            color: $color-four;
+        }
+    }
+
+}
+
+.home-nav,
 .off-canvas {
     @include nav-font;
 
@@ -124,17 +121,9 @@ $color-three: rgba(2, 38, 1, 1);
         }
     }
 
-    .menu {
-
-        li {
-            button {
-                color: $color-one;
-            }
-        }
-    }
 }
 
-.top-bar-container {
+.home-nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -213,7 +202,28 @@ $color-black: rgba(0, 0, 0, 1);
 .hero-grid-y-height {
     height: 100vh;
 }
+
 //End styling carousel
+
+//Pages title bar
+$color-two: rgba(5, 89, 2, 0.8);
+.page-title-bar {
+    background-color: $color-two;
+    text-align: center;
+
+    a,
+    p {
+        color: $color-three;
+        font-size: 1rem;
+    }
+
+    a:hover {
+        color: $color-four;
+        text-decoration: underline;
+    }
+
+}
+$color-two: rgba(5, 89, 2, 1);
 
 //Setting variables for box shadows on about page boxes
 $color-black: rgba(10, 20, 23, 0.4); //Setting color-eight opacity for box shadow
@@ -341,10 +351,10 @@ $color-one: rgba(6, 115, 2, 1);
 //End of styling cards with product categories
 
 .google-maps {
-    padding-bottom: 30vh;
+    padding-bottom: 60vh;
 
     iframe {
-        height: 30vh;
+        height: 60vh;
     }
 }
 
