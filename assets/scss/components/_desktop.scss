@@ -6,22 +6,17 @@
 
     }
 
-    .img-left,
-    .img-right {
-        position: relative;
-        top: 3.5rem;
+    .orbit-slide-1,
+    .orbit-slide-2,
+    .orbit-slide-3,
+    .orbit-slide-4 {
+        
+        p {
+            
+            font-size: 5rem;
+            
+        }
 
     }
-
-    .img-left {
-        left: 1rem;
-
-    }
-
-    .img-right {
-        right: 1rem;
-
-    }
-
 
 }

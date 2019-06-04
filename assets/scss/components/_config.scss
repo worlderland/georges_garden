@@ -5,7 +5,6 @@ $color-one: rgba(6, 115, 2, 1); //#067302
 $color-two: rgba(5, 89, 2, 1); //#055902
 $color-three: rgba(2, 38, 1, 1); //#022601
 $color-four: rgba(132, 217, 4, 1); //#84D904
-$color-five: rgba(215, 242, 5, 1); //#D7F205
 
 .text-uppercase {
   text-transform: uppercase;
@@ -13,8 +12,13 @@ $color-five: rgba(215, 242, 5, 1); //#D7F205
 
 //Set the fonts
 @font-face {
-  font-family: 'Kite-One', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Kite+One&display=swap);
+  font-family: 'Indie Flower', cursive;
+  src: url(//fonts.googleapis.com/css?family=Indie+Flower&display=swap);
+}
+
+@font-face {
+  font-family: 'Gloria Hallelujah', cursive;
+  src: url(//fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap);
 }
 
 @font-face {
@@ -23,7 +27,12 @@ $color-five: rgba(215, 242, 5, 1); //#D7F205
 }
 
 @mixin title-font {
-  font-family: 'Kite-One', sans-serif !important;
+  font-family: 'Indie Flower', cursive !important;
+}
+
+@mixin nav-font {
+  font-family: 'Gloria Hallelujah', cursive !important;
+  font-size: 1rem;
 }
 
 @mixin body-font {
@@ -52,7 +61,6 @@ $color-five: rgba(215, 242, 5, 1); //#D7F205
 //Set variables for gradients
 $gradient-one-two: linear-gradient(to right, $color-one, $color-two);
 $gradient-three-four: linear-gradient(to right, $color-one, $color-four);
-$gradient-five-six: linear-gradient(to right, $color-two, $color-five);
 
 //Set mixins for gradients
 @mixin gradient-one-two {
@@ -116,17 +124,6 @@ $transform-scale: 0;
   -o-transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
   transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
 }
-
-//Set text colour - if required
-// @function set-text-color($color) {
-//     @if (lightness($color) > 48) {
-//       @return #000;
-//     }
-
-//     @else {
-//       @return #fff;
-//     }
-//   }
 
 .test {
   border: 1px solid red;

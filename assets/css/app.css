@@ -2,8 +2,12 @@
   text-transform: uppercase; }
 
 @font-face {
-  font-family: 'Kite-One', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Kite+One&display=swap); }
+  font-family: 'Indie Flower', cursive;
+  src: url(//fonts.googleapis.com/css?family=Indie+Flower&display=swap); }
+
+@font-face {
+  font-family: 'Gloria Hallelujah', cursive;
+  src: url(//fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap); }
 
 @font-face {
   font-family: 'Imprima', sans-serif;
@@ -16,8 +20,12 @@
   text-transform: uppercase; }
 
 @font-face {
-  font-family: 'Kite-One', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Kite+One&display=swap); }
+  font-family: 'Indie Flower', cursive;
+  src: url(//fonts.googleapis.com/css?family=Indie+Flower&display=swap); }
+
+@font-face {
+  font-family: 'Gloria Hallelujah', cursive;
+  src: url(//fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap); }
 
 @font-face {
   font-family: 'Imprima', sans-serif;
@@ -36,25 +44,25 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Kite-One', sans-serif !important; }
+  font-family: 'Indie Flower', cursive !important; }
 
 h1 {
-  font-size: 2em;
+  font-size: 3.5em;
   display: block;
-  padding: 1em 0.5em;
-  color: #d7f205;
+  color: #84d904;
   text-transform: uppercase; }
 
 h2 {
-  font-size: 1.4em;
-  padding: 1em 0;
-  color: #022601; }
+  font-size: 2.5em;
+  display: block;
+  color: #022601;
+  text-transform: uppercase; }
 
 h3 {
   font-size: 1.6em;
   display: block;
   padding: 14px 0.5em;
-  color: #d7f205; }
+  color: #84d904; }
 
 h4 {
   font-size: 1.2em;
@@ -72,26 +80,26 @@ input,
 textarea,
 button,
 label {
-  font-family: 'Kite-One', sans-serif !important; }
+  font-family: 'Indie Flower', cursive !important; }
 
 button a {
   color: white; }
   button a::after {
-    color: #d7f205; }
+    color: #84d904; }
 
 label {
   color: white;
   padding-bottom: 5px; }
 
 .section-title {
-  color: #d7f205;
+  color: #84d904;
   padding: 0.5rem; }
 
 input,
 textarea,
 button,
 label {
-  font-family: 'Kite-One', sans-serif !important; }
+  font-family: 'Indie Flower', cursive !important; }
 
 label {
   color: white;
@@ -109,7 +117,8 @@ textarea {
 
 .top-bar-container,
 .off-canvas {
-  font-family: 'Kite-One', sans-serif; }
+  font-family: 'Gloria Hallelujah', cursive !important;
+  font-size: 1rem; }
   .top-bar-container a,
   .off-canvas a {
     color: white; }
@@ -146,6 +155,14 @@ textarea {
   background-size: cover;
   background-position: center center;
   height: 100vh; }
+  .orbit-slide-1 p,
+  .orbit-slide-2 p,
+  .orbit-slide-3 p,
+  .orbit-slide-4 p {
+    font-family: 'Indie Flower', cursive !important;
+    font-size: 3rem;
+    color: white;
+    margin: 0; }
 
 .orbit-slide-1 {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1)), url(../img/yellow-flower.JPG); }
@@ -158,6 +175,9 @@ textarea {
 
 .orbit-slide-4 {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1)), url(../img/yellow-flower-2.JPG); }
+
+.hero-grid-y-height {
+  height: 100vh; }
 
 .box-shadowed {
   -webkit-box-shadow: 5px 5px 0 rgba(10, 20, 23, 0.4);
@@ -178,7 +198,7 @@ textarea {
     bottom: 0;
     z-index: 10;
     width: 100%;
-    padding: 10px 0;
+    padding: 5px 0;
     font-family: 'Imprima', sans-serif !important;
     font-size: 2rem;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.1)); }
@@ -187,8 +207,12 @@ textarea {
   -webkit-animation-duration: 3s;
   animation-duration: 3s; }
 
-.card span {
-  color: white; }
+.card span p {
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Indie Flower', cursive !important;
+  text-transform: uppercase;
+  margin: 0; }
 
 .separator {
   background-color: rgba(6, 115, 2, 0.6);
@@ -196,8 +220,33 @@ textarea {
   .separator p {
     font-size: 2rem; }
 
-.shared {
-  margin-bottom: 0.7rem; }
+.prod img {
+  background: white;
+  border-radius: 50%;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s; }
+  .prod img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    overflow: hidden; }
+
+.prod-desc {
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 10px 0;
+  background: white; }
+  .prod-desc h3 {
+    color: #067302; }
+  .prod-desc p {
+    color: black; }
+  .prod-desc:hover p {
+    color: #84d904;
+    text-decoration: underline; }
+
+.card.fadeInUp {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s; }
 
 .google-maps {
   padding-bottom: 30vh; }
@@ -205,7 +254,7 @@ textarea {
     height: 30vh; }
 
 .boom-button-white {
-  font-family: 'Kite-One', sans-serif !important;
+  font-family: 'Indie Flower', cursive !important;
   border-radius: 0.7rem;
   padding: .5rem 1.5rem;
   margin-bottom: 15px;
@@ -244,8 +293,12 @@ footer {
   text-transform: uppercase; }
 
 @font-face {
-  font-family: 'Kite-One', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Kite+One&display=swap); }
+  font-family: 'Indie Flower', cursive;
+  src: url(//fonts.googleapis.com/css?family=Indie+Flower&display=swap); }
+
+@font-face {
+  font-family: 'Gloria Hallelujah', cursive;
+  src: url(//fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap); }
 
 @font-face {
   font-family: 'Imprima', sans-serif;
@@ -255,16 +308,22 @@ footer {
   border: 1px solid red; }
 
 @media screen and (min-width: 668px) {
-  .icons {
-    height: 70%;
-    width: 70%; } }
+  .orbit-slide-1 p,
+  .orbit-slide-2 p,
+  .orbit-slide-3 p,
+  .orbit-slide-4 p {
+    font-size: 4rem; } }
 
 .text-uppercase {
   text-transform: uppercase; }
 
 @font-face {
-  font-family: 'Kite-One', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Kite+One&display=swap); }
+  font-family: 'Indie Flower', cursive;
+  src: url(//fonts.googleapis.com/css?family=Indie+Flower&display=swap); }
+
+@font-face {
+  font-family: 'Gloria Hallelujah', cursive;
+  src: url(//fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap); }
 
 @font-face {
   font-family: 'Imprima', sans-serif;
@@ -276,11 +335,8 @@ footer {
 @media screen and (min-width: 1024px) {
   .off-canvas {
     width: 20%; }
-  .img-left,
-  .img-right {
-    position: relative;
-    top: 3.5rem; }
-  .img-left {
-    left: 1rem; }
-  .img-right {
-    right: 1rem; } }
+  .orbit-slide-1 p,
+  .orbit-slide-2 p,
+  .orbit-slide-3 p,
+  .orbit-slide-4 p {
+    font-size: 5rem; } }

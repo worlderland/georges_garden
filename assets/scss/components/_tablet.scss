@@ -1,8 +1,17 @@
 @import "config";
 
 @include mediaMd {
-    .icons {
-        height: 70%;
-        width: 70%;
+
+    .orbit-slide-1,
+    .orbit-slide-2,
+    .orbit-slide-3,
+    .orbit-slide-4 {
+        
+        p {
+            
+            font-size: 4rem;
+            
+        }
+
     }
 }
