@@ -281,6 +281,9 @@ label {
   .sticky-navbar a {
     color: #022601; }
 
+.page-active a {
+  color: #84d904; }
+
 .orbit-slide-1,
 .orbit-slide-2,
 .orbit-slide-3,
@@ -295,6 +298,7 @@ label {
   .orbit-slide-4 p {
     font-family: 'Indie Flower', cursive !important;
     font-size: 3rem;
+    line-height: 3.5rem;
     color: white;
     margin: 0; }
 
