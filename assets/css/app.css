@@ -135,8 +135,26 @@ html * {
   margin: 0;
   box-sizing: border-box; }
 
+@font-face {
+  font-family: 'Indie Flower', cursive;
+  src: url(//fonts.googleapis.com/css?family=Indie+Flower&display=swap); }
+
+@font-face {
+  font-family: 'Gloria Hallelujah', cursive;
+  src: url(//fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap); }
+
+@font-face {
+  font-family: 'Imprima', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Imprima&display=swap); }
+
+.test {
+  border: 1px solid red; }
+
 .text-uppercase {
   text-transform: uppercase; }
+
+.circular {
+  border-radius: 50%; }
 
 @font-face {
   font-family: 'Indie Flower', cursive;
@@ -156,20 +174,8 @@ html * {
 .text-uppercase {
   text-transform: uppercase; }
 
-@font-face {
-  font-family: 'Indie Flower', cursive;
-  src: url(//fonts.googleapis.com/css?family=Indie+Flower&display=swap); }
-
-@font-face {
-  font-family: 'Gloria Hallelujah', cursive;
-  src: url(//fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap); }
-
-@font-face {
-  font-family: 'Imprima', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Imprima&display=swap); }
-
-.test {
-  border: 1px solid red; }
+.circular {
+  border-radius: 50%; }
 
 body {
   background: white;
@@ -228,15 +234,6 @@ label {
   padding: 0.5rem;
   color: black; }
 
-.button {
-  background: #055902;
-  border-radius: 15px;
-  color: white; }
-  .button:hover {
-    background: #84d904;
-    color: #055902;
-    border: 1px solid #055902; }
-
 .off-canvas {
   background-color: rgba(2, 38, 1, 0.9);
   width: 100%; }
@@ -283,6 +280,9 @@ label {
 
 .page-active a {
   color: #84d904; }
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  border-color: #022601 transparent transparent; }
 
 .orbit-slide-1,
 .orbit-slide-2,
@@ -353,8 +353,8 @@ label {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.1)); }
 
 .card.fadeInUp {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s; }
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
 
 .card span p {
   color: white;
@@ -390,9 +390,6 @@ label {
   .prod-desc p {
     padding: 0.5rem;
     color: black; }
-  .prod-desc:hover p {
-    color: #84d904;
-    text-decoration: underline; }
 
 .card.fadeInUp {
   -webkit-animation-duration: 3s;
@@ -403,34 +400,53 @@ label {
   .google-maps iframe {
     height: 60vh; }
 
-.boom-button-white {
-  font-family: 'Indie Flower', cursive !important;
-  border-radius: 0.7rem;
-  padding: .5rem 1.5rem;
-  margin-bottom: 15px;
-  color: white;
-  border: solid 2px white;
-  background-color: transparent;
-  z-index: 1;
+.custom-button {
+  display: block;
+  width: 50%;
   position: relative;
-  overflow: hidden; }
-  .boom-button-white::after {
-    content: '';
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.2);
-    position: absolute;
-    top: -120%;
-    bottom: -50%;
-    width: 2em;
-    transform: translateX(-525%) rotate(35deg); }
-  .boom-button-white:hover {
-    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4) inset;
-    background-color: transparent;
-    cursor: pointer;
-    color: white; }
-  .boom-button-white:hover::after {
-    transition: transform 0.45s ease-in-out;
-    transform: translateX(200%) rotate(35deg); }
+  padding: 1em 1.5em;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  margin: 0.5em auto;
+  font-family: 'Indie Flower', cursive !important;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center; }
+  .custom-button.type3 {
+    color: #067302; }
+    .custom-button.type3.type3::after, .custom-button.type3.type3::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 20%;
+      height: 30%;
+      border: 2px solid;
+      transition: all 0.6s ease;
+      border-radius: 2px; }
+    .custom-button.type3.type3::after {
+      bottom: 0;
+      right: 0;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: #067302;
+      border-right-color: #067302; }
+    .custom-button.type3.type3::before {
+      top: 0;
+      left: 0;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-top-color: #067302;
+      border-left-color: #067302; }
+    .custom-button.type3.type3:hover:after, .custom-button.type3.type3:hover:before {
+      border-bottom-color: #067302;
+      border-right-color: #067302;
+      border-top-color: #067302;
+      border-left-color: #067302;
+      width: 105%;
+      height: 105%;
+      border-radius: 50%; }
 
 footer {
   background-color: white; }
@@ -438,9 +454,6 @@ footer {
     color: #067302; }
     footer a:hover {
       color: #84d904; }
-
-.text-uppercase {
-  text-transform: uppercase; }
 
 @font-face {
   font-family: 'Indie Flower', cursive;
@@ -456,6 +469,12 @@ footer {
 
 .test {
   border: 1px solid red; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.circular {
+  border-radius: 50%; }
 
 @media screen and (min-width: 668px) {
   .off-canvas {
@@ -473,9 +492,6 @@ footer {
   .orbit-slide-4 p {
     font-size: 4rem; } }
 
-.text-uppercase {
-  text-transform: uppercase; }
-
 @font-face {
   font-family: 'Indie Flower', cursive;
   src: url(//fonts.googleapis.com/css?family=Indie+Flower&display=swap); }
@@ -490,6 +506,12 @@ footer {
 
 .test {
   border: 1px solid red; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.circular {
+  border-radius: 50%; }
 
 @media screen and (min-width: 1024px) {
   .orbit-slide-1 p,

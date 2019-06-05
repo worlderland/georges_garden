@@ -231,7 +231,7 @@
     <section class="grid-container">
       <div class="grid-x grid-margin-x grid-margin-y small-up-1 medium-up-3">
         <div class="cell">
-          <a class="card fadeInUp animated">
+          <a class="card">
             <img src="assets/img/450flowers.jpg" alt="Lorem Ipsum">
             <span class="text-center">
               <p>Our favourites</p>
@@ -314,13 +314,13 @@
     </section>
     <!-- END OF SEPARATOR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
-    <!-- BEGINNING OF PRODUCTS SECTION =============================================================================-->
+    <!-- BEGINNING OF MOST LOVED PRODUCTS SECTION =============================================================================-->
     <div class="grid-container">
       <div class="grid-x grid-margin-y">
         <!-- Empty cell for spacing -->
         <div class="cell"></div>
         <div class="cell">
-          <h2 class="text-uppercase text-center">Products</h2>
+          <h2 class="text-uppercase text-center">Most Loved Products</h2>
         </div>
         <div class="cell"></div>
       </div>
@@ -330,30 +330,22 @@
         <section class="cell prod small-6 medium-4 large-3">
           <a href="#">
             <img src="assets/img/300roses.jpg" alt="Roses">
-            <div class="prod-desc">
-              <h3>Roses</h3>
-              <p>The perfect gift for her...</p>
-              <p>From $50</p>
-            </div>
           </a>
+          <div class="prod-desc">
+            <h3>Roses</h3>
+            <p>The perfect gift for her...</p>
+            <p>From $50</p>
+            <a href="product.html" class="custom-button type3">Read More...</a>
+          </div>
         </section>
         <section class="cell prod small-6 medium-4 large-3">
           <a href="#">
-            <img src="assets/img/300tulips.jpg" alt="Tulips">
+            <img src="assets/img/300pot-ideas.jpg" alt="Pot ideas">
             <div class="prod-desc">
-              <h3>Tulips</h3>
-              <p>Mother's day gift...</p>
-              <p>From $35</p>
-            </div>
-          </a>
-        </section>
-        <section class="cell prod small-6 medium-4 large-3">
-          <a href="#">
-            <img src="assets/img/300viola.jpg" alt="Viola">
-            <div class="prod-desc">
-              <h3>Viola</h3>
-              <p>For a colourful house...</p>
-              <p>From $15</p>
+              <h3>Pot ideas</h3>
+              <p>For a dear friend...</p>
+              <p>From $20</p>
+              <a href="product.html" class="custom-button type3">Read More...</a>
             </div>
           </a>
         </section>
@@ -364,6 +356,63 @@
               <h3>Orchids</h3>
               <p>The best for your garden...</p>
               <p>From $45</p>
+              <a href="product.html" class="custom-button type3">Read More...</a>
+            </div>
+          </a>
+        </section>
+        <section class="cell prod small-6 medium-4 large-3">
+          <a href="#">
+            <img src="assets/img/300tomatoes.jpg" alt="Tomatoes">
+            <div class="prod-desc">
+              <h3>Tomatoes</h3>
+              <p>The king of your kitchen garden...</p>
+              <p>From $5</p>
+              <a href="product.html" class="custom-button type3">Read More...</a>
+            </div>
+          </a>
+        </section>
+        <div class="cell"></div>
+        <section class="cell prod small-6 medium-4 large-3">
+          <a href="#">
+            <img src="assets/img/300basil.jpg" alt="Basil">
+            <div class="prod-desc">
+              <h3>Basil</h3>
+              <p>The greatest smell of them all...</p>
+              <p>From $2</p>
+              <a href="product.html" class="custom-button type3">Read More...</a>
+            </div>
+          </a>
+        </section>
+        <section class="cell prod small-6 medium-4 large-3">
+          <a href="#">
+            <img src="assets/img/300iris.jpg" alt="Iris">
+            <div class="prod-desc">
+              <h3>Iris</h3>
+              <p>A rare flower...</p>
+              <p>From $75</p>
+              <a href="product.html" class="custom-button type3">Read More...</a>
+            </div>
+          </a>
+        </section>
+        <section class="cell prod small-6 medium-4 large-3">
+          <a href="#">
+            <img src="assets/img/300mint.jpg" alt="Mint">
+            <div class="prod-desc">
+              <h3>Mint</h3>
+              <p>For your home made cocktails...</p>
+              <p>From $1.50</p>
+              <a href="product.html" class="custom-button type3">Read More...</a>
+            </div>
+          </a>
+        </section>
+        <section class="cell prod small-6 medium-4 large-3">
+          <a href="#">
+            <img src="assets/img/300capsicum.jpg" alt="Capsicum">
+            <div class="prod-desc">
+              <h3>Capsicus</h3>
+              <p>For your winter dishes...</p>
+              <p>From $2</p>
+              <a href="product.html" class="custom-button type3">Read More...</a>
             </div>
           </a>
         </section>
@@ -371,7 +420,51 @@
         <div class="cell"></div>
       </div>
     </section>
-    <!-- END OF PRODUCTS SECTION ===================================================================================-->
+    <!-- END OF MOST LOVED PRODUCTS SECTION ===================================================================================-->
+
+    <!-- BEGINNING GEORGE'S LAST PROJECT SECTION @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <section class="grid-container">
+      <div class="grid-x grid-margin-x grid-margin-y text-center">
+        <div class="cell">
+          <h2 class="text-center">George's Last Project...</h2>
+          <div class="responsive-embed widescreen">
+            <!-- The following has been done to embed a youtube video and to mute it. -->
+            <div id="muteYouTubeVideoPlayer"></div>
+
+            <script async src="https://www.youtube.com/iframe_api"></script>
+            <script>
+              function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                  videoId: 'B0DrWAUsNSc', // YouTube Video ID
+                  width: 560, // Player width (in px)
+                  height: 316, // Player height (in px)
+                  playerVars: {
+                    autoplay: 1, // Auto-play the video on load
+                    controls: 0, // Show pause/play buttons in player
+                    showinfo: 0, // Hide the video title
+                    modestbranding: 1, // Hide the Youtube Logo
+                    loop: 1, // Run the video in a loop
+                    fs: 0, // Hide the full screen button
+                    cc_load_policy: 0, // Hide closed captions
+                    iv_load_policy: 3, // Hide the Video Annotations
+                    autohide: 0 // Hide video controls when playing
+                  },
+                  events: {
+                    onReady: function (e) {
+                      e.target.mute();
+                    }
+                  }
+                });
+              }
+
+              // Written by @labnol 
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END GEORGE'S LAST PROJECT SECTION @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
     <!-- BEGINNING OF FOOTER ???????????????????????????????????????????????????????????????????????????????????????-->
     <footer class="grid-container-fluid">
@@ -399,11 +492,11 @@
               <div class="cell"></div>
               <div class="cell">
                 <ul class="menu align-center">
-                  <li><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                  <li><a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-f fa-2x"></i></a>
                   </li>
-                  <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                  <li><a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram fa-2x"></i></a>
                   </li>
-                  <li><a href="#"><i class="fab fa-pinterest fa-2x"></i></a>
+                  <li><a href="https://www.pinterest.com" target="blank"><i class="fab fa-pinterest fa-2x"></i></a>
                   </li>
                 </ul>
               </div>

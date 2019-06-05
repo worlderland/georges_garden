@@ -6,10 +6,6 @@ $color-two: rgba(5, 89, 2, 1); //#055902
 $color-three: rgba(2, 38, 1, 1); //#022601
 $color-four: rgba(132, 217, 4, 1); //#84D904
 
-.text-uppercase {
-  text-transform: uppercase;
-}
-
 //Set the fonts
 @font-face {
   font-family: 'Indie Flower', cursive;
@@ -37,6 +33,12 @@ $color-four: rgba(132, 217, 4, 1); //#84D904
 
 @mixin body-font {
   font-family: 'Imprima', sans-serif !important;
+}
+
+@mixin button-font {
+  font-family: 'Indie Flower', cursive !important;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 //Set media query mixins
@@ -125,6 +127,15 @@ $transform-scale: 0;
   transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
 }
 
+//Classes
 .test {
   border: 1px solid red;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.circular {
+  border-radius: 50%;
 }

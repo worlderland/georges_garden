@@ -15,7 +15,7 @@ var sticky = topBarContainer.offsetTop;
 function myFunction() {
     if (window.pageYOffset > sticky) {
     topBarContainer.classList.add("sticky-navbar");
-    $(".card").addClass(" fadeInUp animated");
+    //$(".card").addClass(" fadeInUp animated");
     } else {
     topBarContainer.classList.remove("sticky-navbar");
     }

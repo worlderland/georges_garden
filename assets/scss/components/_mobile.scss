@@ -68,17 +68,6 @@ label {
     color: $color-black;
 }
 
-.button {
-    background: $color-two;
-    border-radius: 15px;
-    color: $color-white;
-
-    &:hover {
-        background: $color-four;
-        color: $color-two;
-        border: 1px solid $color-two;
-    }
-}
 //END GENERAL STYLES =================================================================================================================
 
 //BEGINNING NAVIGATION MENU STYLES====================================================================================================
@@ -152,11 +141,17 @@ $color-white: rgba(255, 255, 255, 0.9);
 $color-white: rgba(255, 255, 255, 1);
 
 .page-active {
-    a{
+    a {
         color: $color-four;
     }
-    
+
 }
+
+//Overriding the color for the dropdown menu icon
+.dropdown.menu>li.is-dropdown-submenu-parent>a::after {
+    border-color: $color-three transparent transparent;
+}
+
 //END NAVIGATION MENU STYLES =================================================================================================================
 
 //BEGINNING BODY STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????????
@@ -215,6 +210,7 @@ $color-black: rgba(0, 0, 0, 1);
 
 //Pages title bar
 $color-two: rgba(5, 89, 2, 0.8);
+
 .page-title-bar {
     background-color: $color-two;
     text-align: center;
@@ -231,6 +227,7 @@ $color-two: rgba(5, 89, 2, 0.8);
     }
 
 }
+
 $color-two: rgba(5, 89, 2, 1);
 
 //Setting variables for box shadows on about page boxes
@@ -274,8 +271,8 @@ $color-black: rgba(0, 0, 0, 0.6);
 }
 
 .card.fadeInUp {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 $color-white: rgba(255, 255, 255, 1);
@@ -344,12 +341,6 @@ $color-one: rgba(6, 115, 2, 1);
         color: $color-black;
     }
 
-    &:hover {
-        p {
-            color: $color-four;
-            text-decoration: underline;
-        }
-    }
 }
 
 .card.fadeInUp {
@@ -370,42 +361,79 @@ $color-one: rgba(6, 115, 2, 1);
 //END BODY STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
 //BEGINNING BUTTONS STYLES =================================================================================================================
-//INSERTED TO PASS VALIDATION
+// .button {
+//     background: $color-one;
+//     margin: 15px 0;
+//     padding: 15px 2rem;
+//     border-radius: 15px;
+//     @include button-font;
+//     color: $color-white;
+//     text-transform: uppercase;
 
-//Fanny's button
-.boom-button-white {
-    @include title-font;
-    border-radius: 0.7rem;
-    padding: .5rem 1.5rem;
-    margin-bottom: 15px;
-    color: $color-white;
-    border: solid 2px $color-white;
-    background-color: transparent;
-    z-index: 1;
+//     &:hover {
+//         background: $color-four;
+//         color: $color-two;
+//         border: 1px solid $color-two;
+//     }
+// }
+
+.custom-button {
+    display: block;
+    width: 50%;
     position: relative;
-    overflow: hidden;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: $color-white;
+    cursor: pointer;
+    outline: none;
+    margin: 0.5em auto;
+    @include button-font;
+    text-align: center;
 
-    &::after {
-        content: '';
-        z-index: -1;
-        background-color: hsla(0, 0%, 100%, 0.2);
-        position: absolute;
-        top: -120%;
-        bottom: -50%;
-        width: 2em;
-        transform: translateX(-525%) rotate(35deg);
-    }
+    &.type3 {
+        color: $color-one;
 
-    &:hover {
-        box-shadow: 2px 2px 0px 0px rgba($color-black, .4) inset;
-        background-color: transparent;
-        cursor: pointer;
-        color: $color-white;
-    }
+        //Effect three
+        &.type3::after,
+        &.type3::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 20%;
+            height: 30%;
+            border: 2px solid;
+            transition: all 0.6s ease;
+            border-radius: 2px;
+        }
 
-    &:hover::after {
-        transition: transform 0.45s ease-in-out;
-        transform: translateX(200%) rotate(35deg);
+        &.type3::after {
+            bottom: 0;
+            right: 0;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-bottom-color: $color-one;
+            border-right-color: $color-one;
+        }
+
+        &.type3::before {
+            top: 0;
+            left: 0;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            border-top-color: $color-one;
+            border-left-color: $color-one;
+        }
+
+        &.type3:hover:after,
+        &.type3:hover:before {
+            border-bottom-color: $color-one;
+            border-right-color: $color-one;
+            border-top-color: $color-one;
+            border-left-color: $color-one;
+            width: 105%;
+            height: 105%;
+            border-radius: 50%;
+        }
     }
 }
 
