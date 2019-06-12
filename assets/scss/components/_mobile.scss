@@ -263,14 +263,17 @@ $color-black: rgba(0, 0, 0, 0.6);
         }
     }
 
-    span {
+    p {
         position: absolute;
         bottom: 0;
         z-index: 10;
         width: 100%;
         padding: 5px 0;
-        @include body-font;
+        @include title-font;
         font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
         background: linear-gradient(to top, $color-black, $color-white);
     }
 }
@@ -284,16 +287,10 @@ $color-white: rgba(255, 255, 255, 1);
 $color-black: rgba(0, 0, 0, 1);
 
 .card {
-    span {
 
         p {
-            color: $color-white;
-            font-size: 2.5rem;
-            @include title-font;
-            text-transform: uppercase;
-            margin: 0;
+        color: $color-white;
         }
-    }
 }
 
 //End of styling cards with product categories
